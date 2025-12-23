@@ -1,0 +1,54 @@
+general {
+    colors = true
+    color_good = '#FFFFFF'
+    color_degraded  = '#e7a210'
+    color_bad = '#e42727'
+    interval = 1
+}
+
+order += "volume master"
+order += "disk /"
+order += "battery 0"
+order += "cpu_usage 0"
+order += "load"
+order += "tztime local"
+
+battery 0 {
+    format = "%status %percentage %remaining"
+    format_down = ""
+    last_full_capacity = true
+    integer_battery_capacity = true
+    low_threshold = 20
+    threshold_type = percentage
+    hide_seconds = true
+    status_chr = " "
+    status_bat = " "
+    status_unk = " "
+    status_full = " "
+}
+
+tztime local {
+    format = "%V  %A %e.%B   %H:%M:%S"
+}
+
+load {
+    format = " %1min"
+}
+
+cpu_usage {
+    format = " %usage"
+    degraded_threshold = 20
+    max_threshold = 95
+}
+
+disk "/" {
+  format =" %percentage_used"
+}
+
+volume master {
+    format = "%volume "
+    format_muted = ""
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
