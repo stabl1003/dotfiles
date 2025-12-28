@@ -9,5 +9,6 @@ OS: Arch linux
 | shell | zsh | .zshrc |
 | editor | neovim | .config/nvim/init.vim |
 | notifications | dunst | .config/dunst/dunstrc |
-| app launcher | rofi |  |
+| app launcher | rofi |  |]
+| terminal multiplexer | tmux | .config/tmux/tmux.conf |
 
