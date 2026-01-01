@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 #pluggins
-plugins=(git zsh-autosuggestions kitty)
+plugins=(git zsh-autocomplete kitty)
 
 source $ZSH/oh-my-zsh.sh
 
