@@ -4,7 +4,7 @@ OS: Arch linux
 | function | program | configuration |
 | :---: | :---: | :---: |
 | wm | i3 | .config/i3/config |
-| bar | i3status | .config/i3status/config |
+| bar | i3status-rust | .config/i3status-rust/config.toml |
 | lock | i3lcok |  |
 | shell | zsh | .zshrc |
 | editor | neovim | .config/nvim/init.vim |
