@@ -50,7 +50,7 @@ interval = 60
 [[block]]
 block = "battery"
 interval = 5
-format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m)|} "
+format = "   $percentage {$time_remaining.dur(hms:true, min_unit:m)|} "
 
 [[block]]
 block = "cpu"
