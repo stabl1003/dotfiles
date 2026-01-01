@@ -81,9 +81,9 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
 " Telescope
-nnoremap <leader>ff :Telescope find_files<CR>
-nnoremap <leader>fg :Telescope live_grep<CR>
-nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap ff :Telescope find_files<CR>
+nnoremap fg :Telescope live_grep<CR>
+nnoremap fb :Telescope buffers<CR>
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
@@ -102,18 +102,18 @@ endfunction
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " LSP-like mappings
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> de <Plug>(coc-definition)
+nmap <silent> td <Plug>(coc-type-definition)
+nmap <silent> im <Plug>(coc-implementation)
+nmap <silent> re <Plug>(coc-references)
 
 nmap <silent> K :call CocActionAsync('doHover')<CR>
-nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>ca <Plug>(coc-codeaction)
+nmap <leader> rn <Plug>(coc-rename)
+nmap <leader> ca <Plug>(coc-codeaction)
 
 " Diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> dp <Plug>(coc-diagnostic-prev)
+nmap <silent> dn <Plug>(coc-diagnostic-next)
 
 " Auto format on save (optional)
 autocmd BufWritePre *.js,*.ts,*.lua,*.py call CocAction('format')
