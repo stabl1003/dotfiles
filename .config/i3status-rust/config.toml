@@ -1,0 +1,63 @@
+[theme]
+theme = "plain"
+
+[theme.overrides]
+idle_bg = "#000000"
+idle_fg = "#FFFFFF"
+info_bg = "#000000"
+info_fg = "#FFFFFF"
+good_bg = "#000000"
+good_fg = "#FFFFFF"
+warning_bg = "#000000"
+warning_fg = "#e7a210"
+critical_bg = "#000000"
+critical_fg = "#e42727"
+
+[icons]
+icons = "none"
+
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+format = " $brightness  "
+
+[[block]]
+block = "keyboard_layout"
+driver = "setxkbmap"
+format = " $layout "
+interval = 60
+[block.mappings]
+"English (US)" = "us"
+"Czech (CZ)" = "cz"
+
+[[block]]
+block = "sound"
+driver = "pulseaudio"
+format = " {$volume.eng(w:2) |} "
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "used"
+format = "  $percentage "
+interval = 60
+
+[[block]]
+block = "battery"
+interval = 5
+format = "   $percentage {$time_remaining.dur(hms:true, min_unit:m)|} "
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "  $utilization "
+
+[[block]]
+block = "load"
+interval = 1
+format = "  $1m.eng(w:4) "
+
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%V   %A %e.%B   %H:%M:%S') "
