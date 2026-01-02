@@ -24,7 +24,7 @@ player = "spotify"
 [[block]]
 block = "backlight"
 device = "intel_backlight"
-format = " $brightness  "
+format = "  $brightness "
 
 [[block]]
 block = "keyboard_layout"
@@ -38,7 +38,7 @@ interval = 60
 [[block]]
 block = "sound"
 driver = "pulseaudio"
-format = " {$volume.eng(w:2) |} "
+format = "  {$volume.eng(w:2)| } "
 
 [[block]]
 block = "disk_space"
