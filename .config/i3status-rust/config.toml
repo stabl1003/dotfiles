@@ -43,7 +43,7 @@ format = " {$volume.eng(w:2) |} "
 [[block]]
 block = "disk_space"
 path = "/"
-info_type = "used"
+info_type = "free"
 format = "  $percentage "
 interval = 60
 
