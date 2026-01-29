@@ -11,4 +11,5 @@ OS: Arch linux
 | notifications | dunst | .config/dunst/dunstrc |
 | app launcher | rofi |  |]
 | terminal multiplexer | tmux | .config/tmux/tmux.conf |
+| terminal emulator| kitty | .config/kitty/kitty.conf | 
 
