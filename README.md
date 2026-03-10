@@ -12,4 +12,5 @@ OS: Arch linux
 | app launcher | rofi |  |]
 | terminal multiplexer | tmux | .config/tmux/tmux.conf |
 | terminal emulator| kitty | .config/kitty/kitty.conf | 
+| compositor | picom | .config/picom/picom.conf |
 
