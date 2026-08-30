@@ -9,9 +9,24 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 lua << EOF
+
 require('lualine').setup()
+
+require("mason").setup()
+
+require("mason-lspconfig").setup({
+    ensure_installed = {
+        "lua_ls",
+        "pyright",
+        "clangd",
+        "rust_analyzer",
+    },
+})
 EOF
 
